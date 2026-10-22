@@ -9,9 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
-import com.josealuisa.cursobasicoandroid.composables.ButtonExample
-import com.josealuisa.cursobasicoandroid.composables.ImageExample
-import com.josealuisa.cursobasicoandroid.composables.TextExample
+import com.josealuisa.cursobasicoandroid.composables.ProfileScreen
 import com.josealuisa.cursobasicoandroid.ui.theme.CursoBasicoAndroidTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,11 +18,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CursoBasicoAndroidTheme {
-                TextExample(name= "josealuisa")
-                ImageExample()
-                ButtonExample()
-
-
+                ProfileScreen()
             }
         }
     }
